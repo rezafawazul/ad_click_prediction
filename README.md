@@ -1,9 +1,10 @@
-# ad_click_prediction
 
 # 📊 Ad Click Prediction (Beginner Machine Learning Project)
 
 This project is a beginner-level Machine Learning exercise using Python and scikit-learn.  
 It predicts whether a user will click on a promotional banner ad based on their demographic data and internet behavior.
+
+---
 
 ## 🧠 Objective
 
@@ -62,29 +63,39 @@ It predicts whether a user will click on a promotional banner ad based on their 
 
 ```bash
 python ad_click_prediction.py
-Or open ad_click_prediction.ipynb in Jupyter Notebook and run cell-by-cell.
+```
 
-⚠️ Troubleshooting
-If you see this warning:
+Or run cell-by-cell in:
 
-vbnet
-Copy
-Edit
-ConvergenceWarning: lbfgs failed to converge
-Just increase the model's iteration limit:
+```bash
+ad_click_prediction.ipynb
+```
 
+---
 
-## 💡 Why max_iter=500?
+## 💡 Why `max_iter=500`?
 
 Logistic Regression sometimes gives a warning when the model doesn't converge within the default 100 iterations.
 
-This project uses `max_iter=500` to give the model enough time to learn and avoid convergence warnings.
+This project uses:
 
-No more errors ✅
-
-python
-Copy
-Edit
+```python
 LogisticRegression(max_iter=500)
-📄 License
-This project is licensed under the MIT License.
+```
+
+to give the model enough time to learn and avoid convergence warnings.
+
+✅ No more errors. All set!
+
+---
+
+## 📄 License
+
+This project is licensed under the [MIT License](LICENSE).
+
+---
+
+
+## 🙏 Acknowledgment
+
+This project is based on a beginner machine learning module from [DQLab](https://dqlab.id/), using the `ecommerce_banner_promo.csv` dataset provided in the course material.
